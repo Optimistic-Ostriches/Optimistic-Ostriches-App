@@ -1,17 +1,30 @@
 <template>
-  <view class="container">
-    <text class="text-color-primary">My Vue Native App</text>
-  </view>
+  <app-navigator></app-navigator>
 </template>
 
-<style>
-.container {
-  background-color: white;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
+<script>
+import {
+  createAppContainer,
+  createStackNavigator,
+} from "vue-native-router";
+
+import LoginScreen from "./screens/LoginScreen.vue";
+import DayViewScreen from "./screens/DayViewScreen.vue";
+import InProgressTaskScreen from "./screens/InProgressTaskScreen.vue";
+
+const StackNavigator = createStackNavigator(
+  {
+    Login: LoginScreen,
+    DayView: DayViewScreen,
+    InProgressTask: InProgressTaskScreen,
+  },
+  {
+    initialRouteName: 'Login',
+  }
+);
+
+const AppNavigator = createAppContainer(StackNavigator);
+export default {
+  components: { AppNavigator },
 }
-.text-color-primary {
-  color: blue;
-}
-</style>
+</script>
