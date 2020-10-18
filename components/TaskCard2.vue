@@ -1,16 +1,16 @@
 <template>
     <view>
         <view class="card">
-            <text class="task-name">Science Project</text>
-            <text class="task-notes">Here are the notes you entered when you added this task. The notes will help you remember specific things related to the task.</text>
-            <text class="rect-text">Recommended now!</text>
+            <text class="task-name">Math Homework</text>
+            <text class="task-notes">Here are your notes about this task, so you can easily see what needs to be done in one place.</text>
+            <!-- <text class="rect-text">Recommended now!</text> -->
             <view class="button-container">
                 <button
                     title="Let's do it!"
                     color="#19b1c4"
                 />
             </view>
-            <text class="task-time">1 hour</text>
+            <text class="task-time">30 mins</text>
         </view>
     </view>
 </template>

@@ -1,16 +1,16 @@
 <template>
     <view>
         <view class="card">
-            <text class="task-name">Science Project</text>
-            <text class="task-notes">Here are the notes you entered when you added this task. The notes will help you remember specific things related to the task.</text>
-            <text class="rect-text">Recommended now!</text>
+            <text class="task-name">Exercise Break</text>
+            <text class="task-notes">Here are tips or suggestions for this break activity. For example, try going on a quick walk!</text>
+            <!-- <text class="rect-text">Recommended now!</text> -->
             <view class="button-container">
                 <button
                     title="Let's do it!"
                     color="#19b1c4"
                 />
             </view>
-            <text class="task-time">1 hour</text>
+            <text class="task-time">15 mins</text>
         </view>
     </view>
 </template>

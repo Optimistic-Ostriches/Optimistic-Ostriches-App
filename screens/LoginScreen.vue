@@ -10,12 +10,12 @@
     <view class="loginBody">
         <text-input
             class="username-input-container"
-            placeholder="myUsername"
+            placeholder="Username"
             v-model="username"
         />
         <text-input
             class="password-input-container"
-            placeholder="myPassword"
+            placeholder="Password"
             v-model="password"
         />
         <view class="button-container">
