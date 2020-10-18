@@ -2,8 +2,8 @@
   <view class="container">
     <text class="text-time">10 : 00 am</text>
     <task-card></task-card>
-    <view class="progressBar">
-            <text class="progText">Today's Progress</text>
+    <view class="progress-bar">
+            <text class="prog-text">Today's Progress</text>
             <view class="bar">
                 <view class="progress"></view>
             </view>
@@ -34,12 +34,15 @@ export default {
 }
 .text-time {
   color: #072e40;
-  padding-bottom: 20;
+  padding-bottom: 16;
   font-size: 32;
 }
-.progressBar {
+.progress-bar {
     align-items: center;
     padding-top: 10;
+}
+.prog-text {
+    color: #072e40;
 }
 .bar {
     background-color: #072e40;

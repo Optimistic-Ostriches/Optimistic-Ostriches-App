@@ -1,5 +1,9 @@
 <template>
   <view class="container">
+    <image
+        :style="{width:240, height: 140}"
+        :source="require('../assets/logo.png')"
+    />
     <view class="loginHeader">
         <text class="headerText">Let's begin!</text>
     </view>
@@ -14,7 +18,13 @@
             placeholder="myPassword"
             v-model="password"
         />
-        <button title="login" @press="goToDayViewScreen"></button>
+        <view class="button-container">
+            <button 
+                title="login" 
+                @press="goToDayViewScreen"
+                color="#072e40"
+            />
+        </view>
     </view>
   </view>
 </template>
@@ -51,6 +61,11 @@ export default {
   color: #072e40;
   font-size: 16;
 }
+.button-container {
+    background-color: #19b1c4;
+    border-radius: 12;
+    width: 100;
+}
 .loginHeader {
     align-items: center;
     justify-content: center;
@@ -59,6 +74,7 @@ export default {
     background-color: #19b1c4;
     border-top-left-radius: 12;
     border-top-right-radius: 12;
+    margin-top: 20;
 }
 .loginBody {
     align-items: center;
@@ -73,14 +89,14 @@ export default {
     background-color: #bff1f2;
     width: 180;
     height: 32;
-    border-width: 0.5;
+    border-width: 1;
     border-color: #19b1c4;
 }
 .password-input-container {
     background-color: #bff1f2;
     width: 180;
     height: 32;
-    border-width: 0.5;
+    border-width: 1;
     border-color: #19b1c4;
     margin-top: 36;
     margin-bottom: 36;
