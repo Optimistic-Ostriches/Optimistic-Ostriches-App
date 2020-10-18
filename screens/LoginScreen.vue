@@ -20,7 +20,7 @@
         />
         <view class="button-container">
             <button 
-                title="login" 
+                title="Login" 
                 @press="goToDayViewScreen"
                 color="#072e40"
             />
@@ -44,7 +44,7 @@ export default {
     },
     methods: {
         goToDayViewScreen() {
-            this.navigation.navigate("DayView")
+            this.navigation.navigate("DayView");
         }
     }
 }

@@ -5,7 +5,7 @@
             <text class="task-notes">Here are the notes you entered when you added this task. The notes will help you remember specific things related to the task.</text>
             <text class="rect-text">Recommended now!</text>
             <view class="button-container">
-                <button
+                <button 
                     title="Let's do it!"
                     color="#19b1c4"
                 />
@@ -14,6 +14,21 @@
         </view>
     </view>
 </template>
+
+<script>
+export default {
+    props: {
+        navigation: {
+            type: Object
+        }
+    },
+    methods: {
+        goToInProgressTaskScreen() {
+            this.navigation.navigate("Login");
+        }
+    }
+}
+</script>
 
 <style>
 .card {
